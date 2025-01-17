@@ -1,0 +1,16 @@
+[
+    {    
+        "id_danh_mục":"c123",
+        "tên": "Điện thoại",
+        "id_thương_hiệu":["c1","c2","c3"],
+        "id_sản_phẩm":["p1","p2","p3"]
+
+    },
+
+    {
+        "id_danh_mục":"c124",
+        "tên": "Laptop",
+        "id_thương_hiệu":["c4","c5","c6"],
+        "id_sản_phẩm":["p4","p5","p6"]
+    }
+]

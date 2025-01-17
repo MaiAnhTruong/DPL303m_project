@@ -1,0 +1,31 @@
+[
+    {
+        "id_sản_phẩm": "00911084",
+        "tên": "Ihone 16 Pro",
+        "id_danh_mục": "c123",
+        "id_thương_hiệu": "c1",
+        "Giá":{
+            "Giá_bán": "27.390.000 VND",
+            "Giá_gốc": "28.990.000 VND",
+            "Giảm_giá": "6%"
+        },
+        "mô_tả_chi_tiết": "Với chip A18 Pro đẳng cấp, iPhone 16 Pro đem lại trải nghiệm bứt phá trong mọi tác vụ. Sản phẩm được gia tăng mạnh mẽ về thời lượng pin và có nút Điều Khiển Camera hoàn toàn mới. Ngoài ra, đây còn là dòng iPhone đầu tiên được thiết kế để vận hành với bộ tính năng Apple Intelligence tiện dụng.....",
+        "thông_số_nổi_bật": {
+            "thông_tin_hàng_hóa":{
+                "Xuất_xứ": "Trung Quốc",
+                "Thời_diểm_ra_mắt": "09/2024",
+                "Thời_gian_bảo_hành": "12 tháng"
+            },
+            "Thiết_kế_&_trọng_lượng":{
+                "Kích_thước": "149.6 x 71.5 x 8.25 mm",
+                "trọng_lượng_sản_phẩm": "199 gr",
+                "Chuẩn_kháng_nước/Bụi_bẩn": "IP68",
+                "Chất_liệu": "Khung máy: Titanium"
+            }
+        },
+        "Sao": 4.6,
+        "Đánh_giá":12,
+        "Bình_luận": 91,
+        "id_tồn_kho": "inv123"
+    }
+]

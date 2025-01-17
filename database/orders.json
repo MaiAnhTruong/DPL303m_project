@@ -1,0 +1,21 @@
+[
+  {
+    "id_đơn_hàng": "o123",
+    "id_người_dùng": "u123",
+    "ngày_đặt_hàng": "2025-01-16T10:00:00Z",
+    "trạng_thái": "đang giao",
+    "thanh_toán": {
+      "phương_tiện_thanh_toán": "thẻ tín dụng",
+      "trạng_thái": "đã thanh toán"
+    },
+    "thông_tin_sản_phẩm": [
+      {
+        "id_sản_phẩm": "123456",
+        "số_lượng": 1,
+        "giá": 32990000,
+        "id_giảm_giá": 0
+      }
+    ],
+    "tổng_giá": 32990000
+  }
+]  

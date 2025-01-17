@@ -1,0 +1,21 @@
+[
+    {
+        "id_cửa_hàng": "s123",
+        "tên": "FPT Shop Hà Nội",
+        "địa_chỉ": "46 Hồ Tùng Mậu, P. Dịch Vọng, Q. Cầu Giấy, TP. Hà Nội",
+        "điện_thoại": "0123456789",
+        "Thời_gian_mở_cửa": "8:00 - 22:00",
+        "id_sản_phẩm": ["123", "121234", "123125"],
+        "id_giảm_giá": ["p123", "p124"]
+    },
+
+    {
+        "id_cửa_hàng": "s124",
+        "tên": "FPT Shop Hà Nội",
+        "địa_chỉ": "92 Hai Bà Trưng, P. Cửa Nam, Q. Hoàn Kiếm, TP. Hà Nội",
+        "điện_thoại": "0123456789",
+        "Thời_gian_mở_cửa": "8:00 - 22:00",
+        "id_sản_phẩm": ["123", "121234", "123125"],
+        "id_giảm_giá": ["p123", "p124"]
+    }
+]

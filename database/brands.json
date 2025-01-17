@@ -1,0 +1,22 @@
+[
+    {
+        "id_thương_hiệu": "c1",
+        "tên": "Apple",
+        "mô_tả": "Thương hiệu công nghệ hàng đầu thế giới.",
+        "logo": "apple_logo.jpg",
+        "website": "https://www.apple.com",
+        "id_danh_mục": ["c123", "c124"],
+        "id_sản_phẩm": ["00911084", "p2", "p3"] 
+      },
+
+      {
+        "id_thương_hiệu": "c2",
+        "tên": "Samsung",
+        "mô_tả": "Thương hiệu điện tử đến từ Hàn Quốc.",
+        "logo": "samsung_logo.jpg",
+        "website": "https://www.samsung.com",
+        "id_danh_mục": ["c123", "c..."],
+        "id_sản_phẩm": ["p4", "p5", "p6"] 
+      }
+      
+]

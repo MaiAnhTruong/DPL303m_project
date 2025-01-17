@@ -1,0 +1,11 @@
+[
+  {
+    "id_giảm_giá": "p123",
+    "tiêu_đề": "Giảm giá 20% cho iPhone",
+    "mô_tả": "Áp dụng cho tất cả các dòng iPhone trong tháng 1",
+    "ngày_bắt_đầu": "2025-01-01",
+    "ngày_kết_thúc": "2025-01-31",
+    "id_sản_phẩm": ["00911084"],
+    "id_cửa_hàng": ["s123", "s124"]
+  }
+]  

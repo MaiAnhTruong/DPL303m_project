@@ -1,0 +1,12 @@
+[
+  {
+    "id_người_dùng": "u123",
+    "tên": "Mai Anh Truong",
+    "email": "maianhtruong11122004@gmail.com",
+    "số_điện_thoại": "0987654321",
+    "địa_chỉ": "123 Đường ABC, Hà Nội",
+    "mật_khẩu": "12345678",
+    "id_đơn_hàng": ["o123", "o124", "o125"],
+    "id_đánh_giá": ["r123", "r124"]
+  }
+]
