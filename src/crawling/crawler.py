@@ -18,7 +18,7 @@ class Crawler:
         # self.count = 0
         self.scroll_pause_time = scroll_pause_time
 
-    def crawl_product_links(self, num_product_pages, product_style, button_style):
+    def crawl_product_links(self, num_product_pages, product_style, button_style, headless=True):
         """
         Crawl the product listing page to collect product links.
         - Scrolls down the page incrementally and clicks 'Load more' to paginate.
@@ -36,7 +36,8 @@ class Crawler:
         options.add_argument("--ignore-certificate-errors")
         options.add_argument("--disable-web-security")
         options.add_argument("--incognito")
-        options.add_argument("--headless")
+        if headless:
+            options.add_argument("--headless")
         options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
 
         self.driver = Chrome(service=Service(self.driver_path), options=options)
@@ -44,13 +45,10 @@ class Crawler:
         print("Start collecting product links!")
 
         # Scroll the page in increments to load more products
-        time.sleep(random.uniform(4, 5))
-        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight / 4);")
         time.sleep(self.scroll_pause_time)
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight / 2);")
         time.sleep(self.scroll_pause_time)
-        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight / 4 * 3);")
-        time.sleep(self.scroll_pause_time)
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
         # Click 'Load more' button multiple times for pagination
         for i in range(num_product_pages):
@@ -60,7 +58,6 @@ class Crawler:
                 button = self.driver.find_element(By.CSS_SELECTOR, button_style)
                 self.driver.execute_script("arguments[0].click();", button)
             except Exception as e:
-                print(e)
                 break
 
         # Collect product links from the page
@@ -69,9 +66,10 @@ class Crawler:
             links = self.driver.find_elements(By.CSS_SELECTOR, product_style)
             self.links = [link.get_attribute('href') for link in links]
         except Exception as e:
-            print(e)
+            print(f"Collect links error: {e}")
+            self.links = []
+
         self.driver.quit()
-        return self.links
 
     # def crawl_product_data(self, num_comment_pages):
     #     """

@@ -1,1 +1,1 @@
-- Đang code phần crawl links sản phẩm từ 1 category. Chưa chạy được vì driver đang không tương thích, mai về quê code tiếp :)
+- Đã crawl được từng links sản phẩm, mai crawl từng trang
